@@ -6,8 +6,12 @@ $(document).ready(function(){
       $("#intro").css("animation-play-state","running");
       $("#intro").css("-webkit-animation-play-state","running");
       setTimeout(function () {
-        $("#mainmenu").css("animation-play-state","running");
-        $("#mainmenu").css("-webkit-animation-play-state","running");
+        $("#title").css("animation-play-state","running");
+        $("#title").css("-webkit-animation-play-state","running");
+        setTimeout(function () {
+          $("#mainmenu").css("animation-play-state","running");
+          $("#mainmenu").css("-webkit-animation-play-state","running");
+        }, 1500);
       }, 1500);
     },350);
   }, 1500);
